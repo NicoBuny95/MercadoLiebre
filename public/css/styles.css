@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
 
 }
 
@@ -87,7 +87,7 @@ nav {
 .search-bar-section2 {
     display: inline-block;
     flex: 1; /* Ambas partes ocuparán el 100% del espacio disponible */
-    padding: 20px;
+   
     
 }
 
@@ -160,7 +160,7 @@ nav ul li:last-child {
 }
 
 .Precios-Prod{
-    font-size: 18px;
+  
     font-weight: bold;
 }
 
@@ -310,7 +310,7 @@ footer{
 .info-prod{
     margin-top: 1px ;
     border-top: solid #ebebeb;
-    padding:15px;
+
     position: relative;
     
     
@@ -329,7 +329,7 @@ footer{
     flex: 1;
     max-width: calc(50% - 20px); /* Dos artículos en una fila para tablet */
     margin: 2px; /* Espacio entre los artículos */
-    box-shadow: 0px 0px 10px rgb(100, 100, 100); /* Aplicar sombra a los artículos */
+   
 }
 
 
@@ -351,6 +351,7 @@ footer{
 
     .product-desc-box {
         max-width: 100%; /* Un artículo en una fila para móvil */
+
         
     }
 
@@ -373,9 +374,14 @@ footer{
 
 
 /* Tablet styles */
-@media (min-width: 781px) and (max-width: 1023px) {
+@media (min-width: 761px) and (max-width: 1023px) {
     .product-desc-box {
         max-width: calc(50% - 10px); /* Dos artículos en una fila para tablet */
+    }
+
+    .product-desc-box {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); /* Apply box-shadow for tablets and desktops */ 
+        
     }
     .burger-menu {
         display: none;
@@ -410,12 +416,12 @@ footer{
 }
 
 .info-prod .Precios-Prod {
-    width: 30%;
+    width: 40%;
     float: left;
 }
 
 .info-prod.descuentos {
-    width: 70%;
+    width: 60%;
     float: right;
 }
 
@@ -423,8 +429,7 @@ footer{
     display: block;
     font-size: 16px;
     padding: 5px;
-    width: 30px;
-    height: 30px;
+    
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
